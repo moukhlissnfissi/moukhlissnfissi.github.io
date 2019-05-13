@@ -4,7 +4,7 @@ body{
 }
 .full-screen {
   width: 100vw;
-  height: 100vh;
+  height: 56.25vw;
 }
 .home {
    background-color: #0E0B38;
@@ -55,7 +55,7 @@ a{
   color: white;
 }
 
-nav > ul > li > a :hover, .selected {
+nav > ul > li > a:hover, .selected {
   background-color: red;
 }
 .white {
@@ -89,17 +89,13 @@ footer li {
     display: inline-block;
 }
 footer{
-  
+
   height: 300px;
   color: white;
 }
 .line{
-  display: inline-block;
-  height: 100vh;
   float: left;
-  top: 0;
-  color: white;
-  padding-top: 50vh;
+  padding-top: 31vw;
 }
 .line::after{
   content: '';
@@ -107,7 +103,7 @@ footer{
   width: 1px;
   background-color: white;
   top: 0px;
-  bottom: 43%;
+  bottom: calc(100vh - 34vw);
   border-radius: 10px;
   margin-left: 4.5vw;
 }
@@ -116,13 +112,35 @@ footer{
   position: absolute;
   width: 1px;
   background-color: white;
-  top: 77%;
-  bottom: 0px;
+  top: 45vw;
+  bottom: calc(100vh - 56.2vw);
   border-radius: 10px;
   margin-left: 4.5vw;
 }
 .icon {
-  height: 2%;
+  height: 1.3vw;
   display: block;
-  margin: 1em 4vw;
+  margin: 0.7vw 4vw;
+}
+.download {
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    border: 2px solid red;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 55px;
+    width: 200px;
+    height: 60px;
+    background-color: #DADEE2;
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+    display: inline-block;
+    margin: 1em 30%;
+    text-decoration: none;
+}
+
+.download:hover{
+  background-color: red;
+  color: white;
 }
