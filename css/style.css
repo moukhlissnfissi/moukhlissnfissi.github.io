@@ -245,7 +245,7 @@ footer {
 }
 
 .block {
-  display: block;
+  display: block !important;
 }
 
 .meduim-icon {
@@ -316,15 +316,56 @@ footer {
     .line::before , .line::after{
       display: none;
     }
+    .fa-bars {
+      border: white solid 1px;
+      padding: 2px;
+      float: right;
+      margin: 0.5em 1em;
+      width: 1.4em !important;
+      height: auto;
+      padding: 0.3em;
+      border-radius: 0.2em;
+    }
+    .line {
+      padding: 1em;
+      display: flex;
+      position: absolute;
+      padding-top: 0;
+    }
+    .navbar>.links {
+    width: 100%;
+    padding: 0;
+    display: none;
+    }
+    .navbar .links li {
+        display: block;
+    }
+    .navbar {
+      padding: 0;
+          display: inline;
+        }
+        .intro {
+          display: block;
+          padding: 20% 10%;
+        }
+        .icon {
+            height: 3vw;
+            padding-left: 0;
+        }
+        .home {
+          min-height: 500px;
+        }
   }
 
     @media only screen and (max-width : 560px) {
-        .line {
-          padding: 1em;
-          display: flex;
-        }
-        .intro {
-          padding: 1em;
-          padding-top: 3em;
-        }
+      .home {
+        min-height: 0;
+      }
+      .intro {
+        padding: 3em;
+      }
+
+
+
+
     }
