@@ -2,6 +2,7 @@ body{
   margin: 0;
   font-family: "ten-oldstyle",serif
 }
+
 .full-screen {
   width: 100vw;
   height: 56.25vw;
@@ -63,7 +64,7 @@ nav > ul > li > a:hover, .selected {
 }
 
 .intro{
-  padding: 20% 2em 2em 10em;
+  padding: 10%;
   display: inline-block;
 }
 .service {
@@ -81,8 +82,8 @@ nav > ul > li > a:hover, .selected {
 
 .column {
     padding: 10px;
-    width: 45%;
-    margin: auto;
+    width: 30%;
+    text-align: left;
 }
 footer li {
     float: left;
@@ -95,7 +96,7 @@ footer{
 }
 .line{
   float: left;
-  padding-top: 31vw;
+  padding-top: 30.5vw;
 }
 .line::after{
   content: '';
@@ -118,9 +119,9 @@ footer{
   margin-left: 4.5vw;
 }
 .icon {
-  height: 1.3vw;
-  display: block;
-  margin: 0.7vw 4vw;
+  height: 1.5vw;
+  padding-left: 3.5vw;
+  margin: 0.7vw 5px;
 }
 .download {
     -webkit-transition-duration: 0.2s;
@@ -129,7 +130,6 @@ footer{
     border-radius: 5px;
     text-align: center;
     line-height: 55px;
-    width: 200px;
     height: 60px;
     background-color: #DADEE2;
     font-size: 20px;
@@ -137,6 +137,7 @@ footer{
     color: red;
     display: inline-block;
     margin: 1em 30%;
+    width: 40%;
     text-decoration: none;
 }
 
@@ -144,3 +145,186 @@ footer{
   background-color: red;
   color: white;
 }
+
+
+/* About Section */
+.main-wraper {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-areas: "home home"
+                        "about-image about-info"
+                        "hire-me hire-me";
+}
+.home{
+  grid-area: home;
+}
+.about-image{
+  grid-area: about-image;
+  width: 100%;
+  height: 100%;
+}
+.about-info {
+  grid-area: about-info;
+  display:inline-block;
+  width: 50vw;
+  height: 100%;
+  background-color:#DADEE2;
+}
+
+footer {
+  background-color: #191741;
+  display: grid;
+  grid-template-areas: "brand footer-list footer-list"
+                        "divider1 divider1 divider1"
+                        "phone-contact email-contact adress-contact"
+                        "divider divider divider"
+                        "copyrights copyrights copyrights"
+                        ;
+  height:88%;
+  grid-template-columns: 33% 33% 33%;
+}
+.brand {
+      margin: 50px auto 0 auto;
+  min-width: 70%;
+  grid-area: brand;
+}
+.divider {
+  grid-area: divider;
+  background-color:white;height:1px
+}
+.divider1 {
+  grid-area: divider1;
+  background-color:white;height:1px
+}
+
+.copyrights {
+  grid-area: copyrights;
+  text-align: center;
+  background-color: #0E0B38;
+  padding: 1%;
+}
+.footer-list{
+    grid-area: footer-list;
+}
+
+.subscribe-email {
+  height: 30px;
+  width: 80%;
+  border: 0;
+  padding-left: 10px;
+}
+.subscribe-button {
+  background-image: url(../img/fb.svg);
+  background-position: 2px 2px;
+  border: none;
+  background: red;
+  color: white;
+  padding: 4px;
+  height: 32px;
+  width: 38px;
+}
+
+.plane{
+  width: 30px !important;
+  height:20px;
+}
+.brand-title{
+  color: red;
+  margin-bottom: 10px;
+    display: block;
+  font-size: x-large;
+}
+.brand-message {
+  margin-bottom: 10px;
+  display: block;
+  font-size: medium;
+}
+
+.float-left{
+  float:left;
+}
+
+.block {
+  display: block;
+}
+
+.meduim-icon {
+  height: 30px;
+  width: 30px;
+  padding: 3px 15px;
+}
+.phone-contact {
+  height: 30px;
+  padding: 20px;
+  grid-area: phone-contact;
+}
+.email-contact {
+  height: 30px;
+  padding: 20px;
+  grid-area: email-contact;
+}
+.adress-contact {
+  height: 30px;
+  padding: 20px;
+  grid-area: adress-contact;
+}
+
+.hire-me {
+  grid-area: hire-me;
+      display: flex;
+      justify-content: space-around;
+      padding: 2em;
+      flex-direction: row;
+      flex-wrap: wrap;
+}
+
+/* Small Devices, Tablets */
+  @media only screen and (max-width : 960px) {
+    .main-wraper {
+      grid-template-areas: "home"
+                            "about-image"
+                            "about-info"
+                            "hire-me";
+    }
+
+    footer {
+      grid-template-areas: "brand "
+                      "footer-list"
+                            "divider1"
+                            "phone-contact" "email-contact" "adress-contact"
+                            "divider"
+                            "copyrights"
+                            ;
+      grid-template-columns: auto;
+    }
+      .about-image {
+      height: auto;
+    }
+    .about-info {
+      width: 100%;
+    }
+
+    .navbar .links li {
+        display: none;
+    }
+    .full-screen {
+      height: auto;
+    }
+    .intro {
+    padding: 4em;
+    }
+    .line::before , .line::after{
+      display: none;
+    }
+  }
+
+    @media only screen and (max-width : 560px) {
+        .line {
+          padding: 1em;
+          display: flex;
+        }
+        .intro {
+          padding: 1em;
+          padding-top: 3em;
+        }
+    }
