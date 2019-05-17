@@ -278,6 +278,10 @@ footer {
       flex-wrap: wrap;
 }
 
+.toggle-menu {
+  display: none;
+}
+
 /* Small Devices, Tablets */
   @media only screen and (max-width : 960px) {
     .main-wraper {
@@ -354,6 +358,9 @@ footer {
         }
         .home {
           min-height: 500px;
+        }
+        .toggle-menu {
+          display: block;
         }
   }
 
