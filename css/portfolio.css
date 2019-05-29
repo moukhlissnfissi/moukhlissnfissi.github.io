@@ -1,0 +1,36 @@
+.sections > button {
+  background: transparent;
+  padding: 15px;
+  margin: 5px 10px;
+}
+
+.sections > button:hover, .sections >button.selected {
+  border-color: red;
+  color: red;
+
+}
+.sections {
+  display: flex;
+flex-wrap: wrap;
+width: 80%;
+margin: 30px auto;
+justify-content: center;
+
+}
+.section-name {
+  text-align: center;
+  font-size: 30px;
+  margin: 20px;
+}
+
+.content {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 20px 0;
+}
+.content > div {
+  width: 33.3vw;
+  height: 33.3vw;
+}

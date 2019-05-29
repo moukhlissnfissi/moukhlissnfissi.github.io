@@ -2,6 +2,19 @@ body{
   margin: 0;
   font-family: "ten-oldstyle",serif
 }
+.xlarge {
+  font-size: 3em;
+}
+
+.large {
+  font-size: 2em;
+}
+.medium {
+  font-size: 1em;
+}
+.small {
+  font-size: 0.5em;
+}
 
 .full-screen {
   width: 100vw;
@@ -173,43 +186,23 @@ footer{
 
 footer {
   background-color: #191741;
-  display: grid;
-  grid-template-areas: "brand footer-list footer-list"
-                        "divider1 divider1 divider1"
-                        "phone-contact email-contact adress-contact"
-                        "divider divider divider"
-                        "copyrights copyrights copyrights"
-                        ;
   height:88%;
   grid-template-columns: 33% 33% 33%;
 }
 .brand {
-      margin: 50px auto 0 auto;
-  min-width: 70%;
+  padding-top: 40px;
   grid-area: brand;
 }
-.divider {
-  grid-area: divider;
-  background-color:white;height:1px
-}
-.divider1 {
-  grid-area: divider1;
-  background-color:white;height:1px
-}
 
-.copyrights {
-  grid-area: copyrights;
-  text-align: center;
-  background-color: #0E0B38;
-  padding: 1%;
-}
+
 .footer-list{
     grid-area: footer-list;
+    width: 66%;
 }
 
 .subscribe-email {
   height: 30px;
-  width: 80%;
+  width: 250px;
   border: 0;
   padding-left: 10px;
 }
@@ -233,6 +226,7 @@ footer {
   margin-bottom: 10px;
     display: block;
   font-size: x-large;
+  line-height: 1.5;
 }
 .brand-message {
   margin-bottom: 10px;
@@ -252,21 +246,6 @@ footer {
   height: 30px;
   width: 30px;
   padding: 3px 15px;
-}
-.phone-contact {
-  height: 30px;
-  padding: 20px;
-  grid-area: phone-contact;
-}
-.email-contact {
-  height: 30px;
-  padding: 20px;
-  grid-area: email-contact;
-}
-.adress-contact {
-  height: 30px;
-  padding: 20px;
-  grid-area: adress-contact;
 }
 
 .hire-me {
@@ -291,16 +270,7 @@ footer {
                             "hire-me";
     }
 
-    footer {
-      grid-template-areas: "brand "
-                      "footer-list"
-                            "divider1"
-                            "phone-contact" "email-contact" "adress-contact"
-                            "divider"
-                            "copyrights"
-                            ;
-      grid-template-columns: auto;
-    }
+
       .about-image {
       height: auto;
     }
@@ -329,12 +299,12 @@ footer {
       height: auto;
       padding: 0.3em;
       border-radius: 0.2em;
+      color: white;
     }
     .line {
       padding: 1em;
       display: flex;
       position: absolute;
-      padding-top: 0;
     }
     .navbar>.links {
     width: 100%;
@@ -371,8 +341,50 @@ footer {
       .intro {
         padding: 3em;
       }
-
-
-
-
     }
+
+
+/* Footer */
+
+.contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 30px;
+  }
+
+  .divider {
+    grid-area: divider;
+    background-color:white;height:1px
+  }
+  .divider1 {
+    grid-area: divider1;
+    background-color:white;height:1px
+  }
+
+.copyrights {
+  text-align: center;
+  background-color: #0E0B38;
+  padding: 1.5%;
+  display: block;
+}
+
+
+
+.contact {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+}
+.contact-img {grid-row: span 2 / 1;}
+
+.footer-icon {
+  padding-left: 0px;
+    margin-left: 0;
+    padding-right: 10px;
+}
+
+
+.navbar {
+  background-color: #0E0B38;
+}

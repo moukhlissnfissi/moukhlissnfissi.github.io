@@ -14,15 +14,15 @@
     <div class="main-wraper">
      <section id="home" class="full-screen home">
        <nav class="navbar">
-        <a href="javascript:void(0);" class="icon toggle-menu" onclick="collapseNav()">
-          <i class="fa fa-bars"></i>
-        </a>
+         <div class="toggle-menu">
+          <i class="fa fa-bars" onclick="collapseNav()" ></i>
+        </diV>
          <ul class="links" id="myNav">
               <li><a href="#home" class="selected">Home</a></li>
               <li><a href="#services">Services</a></li>
               <li><a href="#about">About</a></li>
-              <li><a href="#portfolio">Portfolio</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="./portfolio/index.html">Portfolio</a></li>
+              <li><a href="#contacts">Contact</a></li>
          </ul>
        </nav>
        <div class="line">
@@ -67,6 +67,7 @@
      </section>
    </div>
      <footer>
+       <div class="flex">
        <div class="brand">
          <strong class="brand-title">Nfissi Moukhliss</strong><br>
          <h7 class="brand-message">Subscrib to newsletter</h7>
@@ -75,7 +76,6 @@
             <button type="submit" class="subscribe-button" value><i class="fas fa-paper-plane plane"></i></button>
          </form>
        </div>
-
         <ul class="flex footer-list">
           <li class="column">
             <h3>Navigation</h3>
@@ -92,27 +92,30 @@
           </li>
           <li class="column">
             <h3>Follow me</h3>
-            <a><img src="./img/fb.svg" class="icon"></a>
-            <a><img src="./img/instagram.svg" class="icon"></a>
-            <a><img src="./img/twitter.svg"  class="icon"></a>
-            <a><img src="./img/site.svg" class="icon"></a>
+            <a><img src="./img/fb.svg" class="icon footer-icon"></a>
+            <a><img src="./img/instagram.svg" class="icon footer-icon"></a>
+            <a><img src="./img/twitter.svg"  class="icon footer-icon"></a>
+            <a><img src="./img/site.svg" class="icon footer-icon"></a>
           </li>
         </ul>
+      </div>
         <div class="divider1 "></div>
-        <div class="phone-contact">
-          <img src="./img/site.svg" class="float-left meduim-icon">
-          <strong class="block">Phone number</strong>
-          <h7>+2445435443434</h7>
-        </div>
-        <div class="email-contact">
-          <img src="./img/site.svg" class="float-left meduim-icon">
-          <strong class="block">Email</strong>
-          <h7>@kdsnknfskfd</h7>
-        </div>
-        <div class="adress-contact">
-          <img src="./img/site.svg" class="float-left meduim-icon">
-          <strong class="block">Adress</strong>
-          <h7>erlejwn lewnr lwnrl e</h7>
+        <div class="contacts" id="contacts">
+          <div class="contact">
+            <img src="./img/site.svg" class="float-left meduim-icon contact-img">
+            <strong class="block contact-title">Phone number</strong>
+            <h7 class="contact-info">+2445435443434</h7>
+          </div>
+          <div class="contact">
+            <img src="./img/site.svg" class="float-left meduim-icon contact-img">
+            <strong class="block contact-title">Phone number</strong>
+            <h7 class="contact-info">+2445435443434</h7>
+          </div>
+          <div class="contact">
+            <img src="./img/site.svg" class="float-left meduim-icon contact-img">
+            <strong class="block contact-title">Phone number</strong>
+            <h7 class="contact-info">+2445435443434</h7>
+          </div>
         </div>
         <div class="divider"></div>
         <h7 class="copyrights"> BreuhTeam ©2019 Copyrights.All rights reserved.</h7>
